@@ -13,7 +13,7 @@ try:
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
-            {"role": "user","content": "Hey! How's it going?"}
+            {"role": "user", "content": "Hello, how is it going?"}
         ]
     )
     print(response.choices[0].message.content)

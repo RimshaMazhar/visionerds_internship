@@ -11,7 +11,7 @@ client = OpenAI(
 
 response = client.chat.completions.create(
     model="llama-3.3-70b-versatile",
-    messages=[{"role": "user", "content": "Write one creative opening line for a story."}],
+    messages=[{"role": "user", "content": "Write one opening line for a story."}],
     temperature=2
 )
 

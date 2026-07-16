@@ -8,7 +8,7 @@ def extract_text_from_pdf(pdf_path):
     return text
 
 
-def chunk_text(text, chunk_size=80, overlap=30):
+def chunk_text(text, chunk_size=150, overlap=30):
     words = text.split()
     chunks = []
     start = 0

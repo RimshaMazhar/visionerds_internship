@@ -1,20 +1,3 @@
-"""
-Day 19: Multi-Agent Router
---------------------------------
-One small "router" call decides which of THREE paths handles a question:
-
-  1. "document"    -> send it to the RAG pipeline (Week 2/3 retrieval,
-                        same idea as day15/day17's document_lookup)
-  2. "tool"        -> send it to the tool-calling agent (Day 16/17's
-                        calculator / word_count)
-  3. "conversation" -> just answer directly, no retrieval or tool needed
-                        (e.g. "hey, how are you")
-
-This is the fix for "one agent trying to do everything gets messy" —
-instead of one giant prompt juggling retrieval + tools + small talk,
-a router looks at the question ONCE and hands it to the right specialist.
-"""
-
 import os
 import sys
 import json

@@ -1,15 +1,4 @@
-"""
-Day 20: Integration Testing
---------------------------------
-Runs a batch of MIXED questions through the Day 19 router automatically —
-some clearly document questions, some clearly tool questions, some plain
-conversation, and one deliberately ambiguous one — so you can see all the
-routing decisions at once and spot any mis-routes, instead of typing each
-one by hand.
 
-This imports router.py from day19 directly (reuses everything, no new
-tools/retrieval code — Day 20 is testing, not building).
-"""
 
 import sys
 sys.path.append("../day19")
